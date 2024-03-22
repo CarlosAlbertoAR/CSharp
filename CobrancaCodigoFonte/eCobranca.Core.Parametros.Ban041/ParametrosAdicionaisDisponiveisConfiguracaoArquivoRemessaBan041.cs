@@ -1,0 +1,24 @@
+using eCobranca.Atributos;
+using eCobranca.Enumerator;
+using eCobranca.Factory;
+using eCobranca.Util;
+
+namespace eCobranca.Core.Parametros.Ban041;
+
+public class ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan041 : ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessa, IParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan041
+{
+	public ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan041()
+	{
+		parametros.AddRange(EnumUtil.GetEnumByAttributeToParametroConfiguracao<EnumParametrosAdicionaisConfiguracao, AtributoChave>(new AtributoChave(EnumModuloParametrizacao.CONFIGURACAO_REMESSA, EnumCodigoBanco.BANCO_DO_ESTADO_DO_RIO_GRANDE_DO_SUL)));
+	}
+
+	public ParametroConfiguracao GeraRegistroTransacaoTipo1DetalheTituloRemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_TRANSACAO_TIPO_1_DETALHE_TITULO_REMESSA_CNAB400);
+	}
+
+	public ParametroConfiguracao GeraRegistroTransacaoTipo2MensagemRemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_TRANSACAO_TIPO_2_MENSAGEM_TITULO_REMESSA_CNAB400);
+	}
+}

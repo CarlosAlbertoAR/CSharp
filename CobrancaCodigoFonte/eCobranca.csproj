@@ -1,0 +1,196 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>eCobranca</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="eCobranca.Core.Modelo.Imagens.001.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.003.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.004.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.008.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.021.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.024.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.027.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.028.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.029.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.031.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.033.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.036.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.038.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.041.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.047.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.070.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.097.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.099.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.104.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.151.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.231.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.237.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.244.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.246.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.263.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.266.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.275.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.291.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.320.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.341.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.347.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.353.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.356.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.389.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.392.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.399.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.409.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.422.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.424.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.453.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.479.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.600.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.604.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.610.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.623.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.633.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.637.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.641.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.643.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.702.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.707.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.721.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.738.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.741.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.745.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.748.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.749.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.756.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.AutenticacaoMecanica.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.085.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.037.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.136.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.133.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.084.jpg" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.a.gif" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.b.gif" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.c.gif" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.d.gif" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.a.bmp" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.b.bmp" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.c.bmp" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.d.bmp" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.a.png" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.b.png" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.c.png" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.d.png" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.a.tif" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.b.tif" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.c.tif" />
+    <None Remove="eCobranca.Core.Modelo.Imagens.d.tif" />
+    <None Remove="eCobranca.Core.Modelo.Fontes.arial.ttf" />
+    <None Remove="eCobranca.Core.Modelo.Fontes.arialbd.ttf" />
+    <None Remove="eCobranca.Core.Modelo.Fontes.ARIALN.TTF" />
+    <None Remove="eCobranca.Core.Modelo.Fontes.ARIALNB.TTF" />
+    <None Remove="eCobranca.Core.Modelo.Fontes.ariblk.ttf" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.001.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.003.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.004.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.008.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.021.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.024.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.027.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.028.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.029.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.031.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.033.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.036.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.038.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.041.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.047.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.070.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.097.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.099.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.104.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.151.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.231.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.237.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.244.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.246.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.263.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.266.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.275.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.291.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.320.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.341.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.347.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.353.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.356.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.389.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.392.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.399.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.409.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.422.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.424.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.453.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.479.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.600.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.604.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.610.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.623.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.633.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.637.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.641.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.643.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.702.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.707.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.721.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.738.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.741.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.745.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.748.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.749.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.756.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.AutenticacaoMecanica.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.085.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.037.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.136.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.133.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.084.jpg" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.a.gif" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.b.gif" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.c.gif" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.d.gif" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.a.bmp" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.b.bmp" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.c.bmp" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.d.bmp" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.a.png" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.b.png" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.c.png" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.d.png" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.a.tif" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.b.tif" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.c.tif" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Imagens.d.tif" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Fontes.arial.ttf" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Fontes.arialbd.ttf" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Fontes.ARIALN.TTF" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Fontes.ARIALNB.TTF" />
+    <EmbeddedResource Include="eCobranca.Core.Modelo.Fontes.ariblk.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="log4net" />
+    <Reference Include="FastReport" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Printing" />
+    <Reference Include="Newtonsoft.Json" />
+  </ItemGroup>
+</Project>

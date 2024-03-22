@@ -1,0 +1,24 @@
+using eCobranca.Atributos;
+using eCobranca.Enumerator;
+using eCobranca.Factory;
+using eCobranca.Util;
+
+namespace eCobranca.Core.Parametros.Ban104;
+
+public class ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan104 : ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessa, IParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan104
+{
+	public ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan104()
+	{
+		parametros.AddRange(EnumUtil.GetEnumByAttributeToParametroConfiguracao<EnumParametrosAdicionaisConfiguracao, AtributoChave>(new AtributoChave(EnumModuloParametrizacao.CONFIGURACAO_REMESSA, EnumCodigoBanco.CAIXA_ECONOMICA_FEDERAL)));
+	}
+
+	public ParametroConfiguracao GeraRegistroDetalheRemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_DETALHE_REMESSA_CNAB400);
+	}
+
+	public ParametroConfiguracao GeraRegistroDetalheOpcionalRemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_DETALHE_OPCIONAL_REMESSA_CNAB400);
+	}
+}

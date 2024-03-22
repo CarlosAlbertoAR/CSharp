@@ -1,0 +1,14 @@
+namespace eCobranca.Core.Parametros.Ban237;
+
+public interface IParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan237 : IParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessa
+{
+	ParametroConfiguracao GeraRegistroTransacaoTipo1RemessaCnab400();
+
+	ParametroConfiguracao GeraRegistroTransacaoTipo2RemessaCnab400();
+
+	ParametroConfiguracao GeraRegistroTransacaoTipo3RemessaCnab400();
+
+	ParametroConfiguracao GeraRegistroTransacaoTipo7RemessaCnab400();
+
+	ParametroConfiguracao ClienteOptaDebitoAutomatico();
+}

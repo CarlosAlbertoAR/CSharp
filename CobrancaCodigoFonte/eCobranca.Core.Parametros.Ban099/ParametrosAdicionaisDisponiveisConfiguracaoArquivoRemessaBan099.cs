@@ -1,0 +1,24 @@
+using eCobranca.Atributos;
+using eCobranca.Enumerator;
+using eCobranca.Factory;
+using eCobranca.Util;
+
+namespace eCobranca.Core.Parametros.Ban099;
+
+public class ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan099 : ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessa, IParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan099
+{
+	public ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan099()
+	{
+		parametros.AddRange(EnumUtil.GetEnumByAttributeToParametroConfiguracao<EnumParametrosAdicionaisConfiguracao, AtributoChave>(new AtributoChave(EnumModuloParametrizacao.CONFIGURACAO_REMESSA, EnumCodigoBanco.COOPERATIVA_CENTRAL_DE_ECONOMIA_E_CREDITO_MUTUO_DAS_UNICRED)));
+	}
+
+	public ParametroConfiguracao GeraRegistroTransacaoTipo1RemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_TRANSACAO_TIPO_1_REMESSA_CNAB400_BAN099);
+	}
+
+	public ParametroConfiguracao GeraRegistroTransacaoTipo2RemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_TRANSACAO_TIPO_2_REMESSA_CNAB400_BAN099);
+	}
+}

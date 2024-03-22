@@ -1,0 +1,49 @@
+using eCobranca.Atributos;
+using eCobranca.Enumerator;
+using eCobranca.Factory;
+using eCobranca.Util;
+
+namespace eCobranca.Core.Parametros.Ban341;
+
+public class ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan341 : ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessa, IParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan341, IParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessa
+{
+	public ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan341()
+	{
+		parametros.AddRange(EnumUtil.GetEnumByAttributeToParametroConfiguracao<EnumParametrosAdicionaisConfiguracao, AtributoChave>(new AtributoChave(EnumModuloParametrizacao.CONFIGURACAO_REMESSA, EnumCodigoBanco.BANCO_ITAU)));
+	}
+
+	public ParametroConfiguracao GeraRegistroDetalheRemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_DETALHE_REMESSA_CNAB400);
+	}
+
+	public ParametroConfiguracao GeraRegistroDetalheOpcionalMultaRemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_DETALHE_OPCIONAL_MULTA_REMESSA_CNAB400);
+	}
+
+	public ParametroConfiguracao GeraRegistroDetalheOpcionalAvalistaRemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_DETALHE_OPCIONAL_REMESSA_CNAB400);
+	}
+
+	public ParametroConfiguracao GeraRegistroMensagemFrenteRemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_MENSAGEM_FRENTE_REMESSA_CNAB400);
+	}
+
+	public ParametroConfiguracao GeraRegistroMensagemVersoRemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_MENSAGEM_VERSO_REMESSA_CNAB400);
+	}
+
+	public ParametroConfiguracao PrimeiraInstrucaoCobranca()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_PRIMEIRA_INSTRUCAO_COBRANCA);
+	}
+
+	public ParametroConfiguracao SegundaInstrucaoCobranca()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_SEGUNDA_INSTRUCAO_COBRANCA);
+	}
+}

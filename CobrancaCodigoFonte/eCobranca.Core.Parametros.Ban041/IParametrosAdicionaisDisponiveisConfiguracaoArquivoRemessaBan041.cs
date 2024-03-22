@@ -1,0 +1,8 @@
+namespace eCobranca.Core.Parametros.Ban041;
+
+public interface IParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan041
+{
+	ParametroConfiguracao GeraRegistroTransacaoTipo1DetalheTituloRemessaCnab400();
+
+	ParametroConfiguracao GeraRegistroTransacaoTipo2MensagemRemessaCnab400();
+}

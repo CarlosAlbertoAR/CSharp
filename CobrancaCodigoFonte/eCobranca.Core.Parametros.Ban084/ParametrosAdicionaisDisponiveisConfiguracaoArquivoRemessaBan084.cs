@@ -1,0 +1,24 @@
+using eCobranca.Atributos;
+using eCobranca.Enumerator;
+using eCobranca.Factory;
+using eCobranca.Util;
+
+namespace eCobranca.Core.Parametros.Ban084;
+
+public class ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan084 : ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessa, IParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan084
+{
+	public ParametrosAdicionaisDisponiveisConfiguracaoArquivoRemessaBan084()
+	{
+		parametros.AddRange(EnumUtil.GetEnumByAttributeToParametroConfiguracao<EnumParametrosAdicionaisConfiguracao, AtributoChave>(new AtributoChave(EnumModuloParametrizacao.CONFIGURACAO_REMESSA, EnumCodigoBanco.UNIPRIME_NORTE_PARANA)));
+	}
+
+	public ParametroConfiguracao GeraRegistroTransacaoTipo1RemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_TRANSACAO_TIPO_1_REMESSA_CNAB400_BAN084);
+	}
+
+	public ParametroConfiguracao GeraRegistroTransacaoTipo2RemessaCnab400()
+	{
+		return FactoryParametroConfiguracao.CriarParametroConfiguracao(EnumParametrosAdicionaisConfiguracao.REM_GERA_REGISTRO_TRANSACAO_TIPO_2_REMESSA_CNAB400_BAN084);
+	}
+}
