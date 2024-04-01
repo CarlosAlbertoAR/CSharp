@@ -1,0 +1,58 @@
+
+Criar um app Console com dotnet, n terminal, digitar:
+
+dotnet new console --framework net6.0
+
+
+# Variáveis e tipos
+
+Nomeclatura: 
+
+	a-z, A-Z, 0-9
+	Sem caracteres especiais
+	Pode conter underline
+	Não pode ser palavra reservada
+
+	int segundaGerraMundial = 1942;
+	float velocidadeF1 = 294.48f;
+	double variavelFloat float = 15.6;
+	decimal variavelFloat float = 15.6;
+	bool variavelBool = true;
+	string corFavorita = "Azul";
+	char variavelChar = 'a'
+
+Forma sem especificar tipo:
+
+	var corFavorita = "Azul"
+	var velocidadeF1 = 294.48f;
+
+Forma não tipada, pouco usada, menos performatica:
+
+	dynamic corFavorita = "Azul"
+	corFavorita = 123456
+
+# Constantes
+
+	const int PI = 3.1456789f;
+	
+
+# Operadores lógicos e aritiméticos
+
+= Atribuição
+== Comparação igualdade
+> Maior que
+< Menor que
+>= Maior ou igual
++ Soma
+- Subtração
+* Multiplicação
+/ Divisão (Cuidado pois pode abreviar
+
+
+# Comentários 
+
+// Linha única
+/*
+	Multiplas
+	Linhas
+*/
