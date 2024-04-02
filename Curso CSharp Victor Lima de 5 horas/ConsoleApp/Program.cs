@@ -38,7 +38,7 @@ namespace HelloWord
             
             */
 
-            /* Operações matemáticas */
+            /* Operações matemáticas 
 
             int numeroQualquer = 20 + 20 - 5;
             int numeroMultiplicado = 10 * 90;
@@ -46,13 +46,45 @@ namespace HelloWord
             Console.WriteLine(numeroQualquer);
             Console.WriteLine(numeroMultiplicado);
             Console.WriteLine(numeroDividido);
-
-
+            */
             
             
+            /*
 
+            Console.WriteLine("Informe sua idade:");
+
+            int idade = int.Parse(Console.ReadLine());
+
+            if (idade >= 0 && idade <= 11)
+            {
+                Console.WriteLine("Você é uma criança.");
+            }else if (idade >= 12 && idade <= 18)
+            {
+                Console.WriteLine("Você é um adolecente.");                
+            }else if (idade >= 19 && idade <= 59)
+            {
+                Console.WriteLine("Você é um adulto.");                                
+            }
+            else
+                Console.WriteLine("Você é um idodo.");                                
+
+            Console.ReadLine();    
+            */
+
+            /* Funções */
+
+            exibirMsg();
+            exibirMsg();
+            exibirMsg();
+            Console.ReadLine();
 
         }
+
+        static void exibirMsg()
+        {
+    	    Console.WriteLine("Estamos usando funções");
+        }
+
     }    
 }
 

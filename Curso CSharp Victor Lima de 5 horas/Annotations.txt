@@ -38,15 +38,19 @@ Forma não tipada, pouco usada, menos performatica:
 
 # Operadores lógicos e aritiméticos
 
-= Atribuição
-== Comparação igualdade
-> Maior que
-< Menor que
+=  Atribuição
+== Igualdade
+!= Diferente
+&& E/And
+|| Ou/Or
+>  Maior que
+<  Menor que
 >= Maior ou igual
-+ Soma
-- Subtração
-* Multiplicação
-/ Divisão (Cuidado pois pode abreviar
+<= Menor ou igual
++  Soma
+-  Subtração
+*  Multiplicação
+/  Divisão (Cuidado pois pode considerar apenas a parte inteira caso ambos numero da divisão sejam inteiros)
 
 
 # Comentários 
@@ -56,3 +60,16 @@ Forma não tipada, pouco usada, menos performatica:
 	Multiplas
 	Linhas
 */
+
+# Funções
+
+static (Não precisa de instância)
+void (Não tem nenhum tipo de retorno)
+
+Ex: static void exibirMsg()
+    {
+		Console.WiriteLine("Estamos usando funções");
+	}
+
+
+3:02
