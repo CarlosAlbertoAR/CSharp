@@ -73,10 +73,12 @@ namespace HelloWord
 
             /* Funções */
 
-            exibirMsg();
-            exibirMsg();
-            exibirMsg();
-            Console.ReadLine();
+            //exibirMsg();
+            //GerarPreco(5.00f, 43);
+            //float soma = Somar(2, 5, 10);
+            //Console.Write("A soma é " + soma);
+            //Console.ReadLine();
+            Console.WriteLine(produtos[1]);
 
         }
 
@@ -84,6 +86,27 @@ namespace HelloWord
         {
     	    Console.WriteLine("Estamos usando funções");
         }
+
+       	static void GerarPreco(float Custo, float Margem)
+	    {
+    		Console.WriteLine("O valor do Produto é " + (Custo + (Custo * (Margem / 100))));
+    	}
+
+		static float Somar(int a, int b, int c)
+    	{
+		    return a + b + c;
+	    }
+
+        //Arrays
+        string[] produtos = new string[5] {
+	        "Sea of thieves",
+	        "FIFA",
+	        "Minecraft",
+	        "Half-Life",
+	        "Portal",
+        };
+	
+        
 
     }    
 }

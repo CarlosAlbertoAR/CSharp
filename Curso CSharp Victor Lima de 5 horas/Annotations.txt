@@ -64,12 +64,78 @@ Forma não tipada, pouco usada, menos performatica:
 # Funções
 
 static (Não precisa de instância)
-void (Não tem nenhum tipo de retorno)
+void (Não tem nenhum tipo de retorno, é o que diferencia uma (function de uma procedure como no Delphi))
 
-Ex: static void exibirMsg()
+Ex: 
+	// Estática e sem retorno
+	static void exibirMsg()
     {
 		Console.WiriteLine("Estamos usando funções");
 	}
+	
+	// Estática e com parâmetro
+  	static void GerarPreco(float Custo, float Margem)
+    {
+  		Console.WriteLine("O valor do Produto é " + (Custo + (Custo * (Margem / 100))));
+  	}
+	
+	// Estática e com retorno do tipo string
+	static float Somar(int a, int b, int c)
+	{
+		return a + b + c;
+	}
+	
+# Arrays
+
+	- Definido pelo tipo de dado, seguido pelo colchetes
+
+	string[] produtos = new string[5] {
+		"Sea of thieves",
+		"FIFA",
+		"Minecraft",
+		"Half-Life",
+		"Portal",
+	};
+	
+	- Declaração simples 
+
+	int[] valores = {40, 50, 60, 70, 20};
+
+	- Acessar o array
+	
+	Console.WriteLine(valores[0]);
+	
+	- Alterar valor no array
+	
+	valores[0] = 99;
+	
+
+# Switch	
+
+	- Forma melhor do que usar if com vários elses
+	- Comparador case apenas para igualdade
+	
+	string cor = "Azul";
+	
+	switch(cor){
+		
+		case "Vermelho":
+			Console.WriteLine("Sua cor favorita é vermelho!");
+			break;
+			
+		case "Amarelo":
+			Console.WriteLine("Sua cor favorita é Amarelo!");
+			break;
+
+		case "Azul":
+			Console.WriteLine("Sua cor favorita é Azul!");
+			break;
+		
+		default:
+			Console.WriteLine("Sua cor favorita não está na lista!");
+				break;
+		
+	}
 
 
-3:02
+3:57 Enums
