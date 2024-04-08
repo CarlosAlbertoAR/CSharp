@@ -32,11 +32,11 @@ Padrão underline_camel: _lastName (Atributos "internos" da classe)
 
 */
 
-namespace Curso
+namespace Convensoes
 {
     class ContaBancaria
     {
-        public string Titular { get; set; }
+        public string? Titular { get; set; }
         private double _saldo;
 
         public void Deposito(double quantia)

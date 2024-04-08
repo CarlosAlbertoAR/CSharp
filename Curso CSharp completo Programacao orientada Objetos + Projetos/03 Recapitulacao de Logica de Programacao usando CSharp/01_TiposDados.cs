@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace TiposDados
+namespace TiposDeDados
 {
-    class PRogram
+    class TipoDado
     {
-        static void Main(string[] args)
+        public void Mostrar()
         {
             bool completo = false;
             Console.WriteLine("Valor da variável boolean " + completo);
