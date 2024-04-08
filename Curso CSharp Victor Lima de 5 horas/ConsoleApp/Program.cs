@@ -1,9 +1,15 @@
 ﻿using System;
+using System.Data;
+using System.Diagnostics.Contracts;
+using System.Net.NetworkInformation;
 
 namespace HelloWord
 {
     class Program
     {
+        enum Cor {Azul, Verde, Amarelo, Vermelho }    
+      	enum Opcao {Criar= 1, Editar, Deletar, Listar, Atualizar}
+
         static void Main(string[] args)
         {
             /* 
@@ -74,11 +80,26 @@ namespace HelloWord
             /* Funções */
 
             //exibirMsg();
+            
             //GerarPreco(5.00f, 43);
+            
             //float soma = Somar(2, 5, 10);
             //Console.Write("A soma é " + soma);
             //Console.ReadLine();
-            Console.WriteLine(produtos[1]);
+            
+            //Console.WriteLine(produtos[1]);
+            
+            //exibirMenu();
+
+            //estruturaWhile();
+
+            //estruturaDoWhile();
+
+            //estruturaForEach();
+
+            //estruturaForComArray();
+
+            estruturaForDecrecente();
 
         }
 
@@ -98,15 +119,122 @@ namespace HelloWord
 	    }
 
         //Arrays
-        string[] produtos = new string[5] {
+        string[] produtos = new string[5] 
+        {
 	        "Sea of thieves",
 	        "FIFA",
 	        "Minecraft",
 	        "Half-Life",
 	        "Portal",
         };
+
+        static void exibirMenu()
+        {
 	
+        	Console.WriteLine("Selecione uma das opções abaixo:");
+	        Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
+        	int index = int.Parse(Console.ReadLine());
+        	Opcao opcaoSelecionada = (Opcao)index;
+
+        	switch (opcaoSelecionada)
+	        {
+		        case Opcao.Criar:
+        			Console.WriteLine("Criando a opção selecionada");
+        			break;
+			
+        		case Opcao.Editar:
+    			    Console.WriteLine("Editando a opção selecionada");
+    			    break;
+
+        		case Opcao.Deletar:
+			        Console.WriteLine("Deletando a opção selecionada");
+    			    break;
+
+        		case Opcao.Listar:
+			        Console.WriteLine("Listando a opção selecionada");
+    			    break;
+
+        		case Opcao.Atualizar:
+			        Console.WriteLine("Atualizando a opção selecionada");
+    			    break;
+	    
+                default:
+            		Console.WriteLine("Opcao não encontrada.");
+                    break;
+	        }	
+
+            Console.ReadLine();
+        }
+
+        static void estruturaWhile()
+        {
+            int contador = 0;
+
+            while (contador < 10)
+            {
+                Console.WriteLine("Executando o while.");
+                contador++;
+            }
+
+            Console.ReadLine();
+        } 
+
+        static void estruturaDoWhile()
+        {
+            int contador = 0;
+
+            do
+            {
+                Console.WriteLine("Executando do while");
+                contador++;
+            } while(contador < 20);
+
+            Console.ReadLine();            
+        }   
+
+        static void estruturaForEach()
+        {
+            string[] palavras = {"Victor", "Lima", "Guia do Programador", "Formação", "Node", "Curso"};
+
+            foreach(string palavra in palavras)
+            {
+                Console.WriteLine("Palavra da vez " + palavra);
+            }
+            
+            Console.ReadLine();                        
+        }
         
+        static void estruturaFor()
+        {
+
+            for (int contador = 0; contador < 0; contador++)
+            {
+                Console.WriteLine("Executando For");
+            }
+        }
+
+        static void estruturaForComArray()
+        {
+            string[] palavras = {"Victor", "Lima", "Guia do Programador", "Formação", "Node", "Curso"};
+
+            for (int contador = 0; contador <palavras.Length; contador++)
+            {
+                Console.WriteLine("Executando For na palavra: " + palavras[contador]);
+            }
+
+            Console.ReadLine();                        
+        }
+
+        static void estruturaForDecrecente()
+        {
+            for(int contador = 6; contador > 0; contador--)
+            {
+                Console.WriteLine("Executando for Descrecente: " + contador);                        
+            }
+
+            Console.ReadLine();                                    
+            
+        }
 
     }    
 }
