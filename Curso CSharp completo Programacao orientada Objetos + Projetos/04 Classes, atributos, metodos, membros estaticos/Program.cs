@@ -9,8 +9,29 @@ namespace Main
     {
         static void Main()
         {
-            // ExecutarExemploTriangulo();
             ExecutarExemploProduto();
+            // ExecutarExemploTriangulo();
+        }
+
+        static void ExecutarExemploProduto()
+        {
+            Produto produto = new();
+
+            Console.WriteLine("Entre com os dados do Produto.");
+            
+            Console.WriteLine("Nome:");
+            produto.Nome = Console.ReadLine();
+
+            Console.WriteLine("Preço:");
+            produto.Preco = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Quantidade em estoque:");
+            produto.Quantidade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(produto) ;
+
+            System.Console.ReadLine();            
+
         }
 
         static void ExecutarExemploTriangulo()
@@ -46,26 +67,6 @@ namespace Main
             System.Console.ReadLine();
         }
 
-        static void ExecutarExemploProduto()
-        {
-            Produto produto = new();
-
-            Console.WriteLine("Entre com os dados do Produto.");
-            
-            Console.WriteLine("Nome:");
-            produto.Nome = Console.ReadLine();
-
-            Console.WriteLine("Preço:");
-            produto.Preco = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Quantidade em estoque:");
-            produto.Quantidade = int.Parse(Console.ReadLine());
-
-            Console.WriteLine(produto) ;
-
-            System.Console.ReadLine();            
-
-        }
     }        
 }
 

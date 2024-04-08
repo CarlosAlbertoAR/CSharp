@@ -1,0 +1,4 @@
+dotnet add package log4net
+dotnet add package FastReport.OpenSource
+dotnet add package FastReport.OpenSource.Export.PdfSimple
+dotnet add package Newtonsoft.Json
