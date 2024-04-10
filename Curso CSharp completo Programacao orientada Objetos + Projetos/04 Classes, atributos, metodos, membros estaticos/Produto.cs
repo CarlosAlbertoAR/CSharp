@@ -19,5 +19,15 @@ namespace PeodutoClass
             return Preco * Quantidade;
         }
 
+        public void AdicionarProduto(int quantidade)
+        {
+            Quantidade += quantidade;
+        }
+
+        public void RemoverProduto(int quantidade)
+        {
+            Quantidade -= quantidade;
+        }
+
     }
 }

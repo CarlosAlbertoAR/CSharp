@@ -2,6 +2,7 @@
 using System.Globalization;
 using TrianguloClass;
 using PeodutoClass;
+using RaioClass;
 
 namespace Main
 {
@@ -9,10 +10,24 @@ namespace Main
     {
         static void Main()
         {
-            ExecutarExemploProduto();
+            //ExecutarExemploProduto();
             // ExecutarExemploTriangulo();
+            ExecutarExemploRaio();
         }
 
+        static void ExecutarExemploRaio()
+        {
+            System.Console.WriteLine("Entre o valor do raio: ");                
+            double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double circunferencia = RaioUtils.CalcularCircunferencia(raio);
+            double volume = RaioUtils.CalcularVolume(raio);
+
+            System.Console.WriteLine("Circunferencia: " + circunferencia.ToString("F2", CultureInfo.InvariantCulture));
+            System.Console.WriteLine("Volume: " + volume.ToString("F2", CultureInfo.InvariantCulture));
+            System.Console.WriteLine("Pi: " + RaioUtils.Pi.ToString("F2", CultureInfo.InvariantCulture));            
+            System.Console.ReadLine();                        
+        }
+        
         static void ExecutarExemploProduto()
         {
             Produto produto = new();
@@ -23,12 +38,28 @@ namespace Main
             produto.Nome = Console.ReadLine();
 
             Console.WriteLine("Preço:");
-            produto.Preco = double.Parse(Console.ReadLine());
+            produto.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine("Quantidade em estoque:");
-            produto.Quantidade = int.Parse(Console.ReadLine());
+            produto.Quantidade = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Console.WriteLine(produto) ;
+            Console.WriteLine("Dados do produto: " + produto) ;
+
+            System.Console.WriteLine();
+            System.Console.WriteLine("Digite o número de produtos a ser adicionado ao estoque");
+            int quantidade = int.Parse(System.Console.ReadLine(), CultureInfo.InvariantCulture);
+            produto.AdicionarProduto(quantidade);
+            
+            System.Console.WriteLine();
+            System.Console.WriteLine("Dados atualizados: " + produto);
+
+            System.Console.WriteLine();
+            System.Console.WriteLine("Digite o número de produtos a ser removido do estoque");
+            quantidade = int.Parse(System.Console.ReadLine(), CultureInfo.InvariantCulture);
+            produto.RemoverProduto(quantidade);
+            
+            System.Console.WriteLine();
+            System.Console.WriteLine("Dados atualizados: " + produto);
 
             System.Console.ReadLine();            
 
