@@ -328,24 +328,104 @@ Ex:
 	
 # Classes
 
-	- Atributos
-		
-		- public string Nome;
-		- public double Idade;
+	+ Ordem sugerida de implementação de membros da Classe:
+		- Atributos privados
+		- Propriedades autoimplementadas
+		- Construtores
+		- Propriedades customizadas
+		- Outros métodos de classe
 	
-	- Métodos
+	+ Construtor
+		- Abaixo dos atributos
+		- Pode ser sobrecarregado
+		- Pode ser criado sem prametros para permitir o uso do construtor padrão
+		ex: 
+		
+			public [mesmo_nome_da_classe](string nome, int idade)
+		
+		Sitaxe alternativa sem Constructor, passando entre chaves:
+		
+			Pessoa pessoa = new Pessoa{nome = "Carlos", idade = 36};	
+	
+	+ Atributos
+		- Publico
+			- Nomeclatura CamelCase
+			
+			ex: public string Nome;
+			    
+		- Privado (Encapsulamento)
+			- Nomeclatura iniciando letra mincuscula
+			
+			ex: private string _nome;
+		
+		- Property
+			- Definições a métodos encapsulados, porém expondo uma sintaxe similar à de atributos e não de métodos.
+			- Nomeclatura CamelCase
+			
+			ex: public string Nome {
+					get { return _nome; }
+					set { 
+						  
+						  if (value != null && value.Length > 1)
+						  {
+						      _nome = value
+						  }
+					}
+		
+		- AutoProperty
+			- Definir operação get e set direto na declaração do atributo.
+			- Nomeclatura CamelCase
+			- Atributos que contém validações precisam usar implementação Property
+			
+			ex: public string Nome { get; private set } (get permitido, set proibido.)
+		
+		
+	+ Métodos
 	
 		- public string Apresentar()
 		{
 			System.Console.WriteLine("Olá, me chamo " + Nome + " e tenho " + Idade + " anos de idade.");
 		}
 		
-	- ToString()
+	
+	+ ToString()
 		override + Tab para retornar a assinatura padrão do Object;
+	
+	+ This 
+		Diferenciar atributos de variáveis locais(Java)
+		Passar o próprio objeto como argumento na chamada de método ou constructor
+	
+	+ Encapsulamento
+	
+
+# Modificadores de acesso
+
+	+ Para membros de classe
+
+							Própria classe		SubClasses no		Classes do		Subclasses fora		Classes fora
+												Assembly			Assembly		do Assembly			do Assembly
+	
+	public					X					X					X				X					X		
+	
+	protected internal		X					X					X				X
+	
+	internal				X					X					X
+	
+	protected				X					X									X
+	
+	private protected		X					X
+	
+	private 				X
+
+	
+	+ Classes também pode receber modificadores de acesso
+	
+		- Acesso por qualquer classe: public class Produto
 		
-	
-	
-	
-44 - Terminando de construir o programa	
-
-
+		- Acesso somente dentro do assembly: internal class producto
+		
+		- Aceso somente pela classe-mãe: private class produto
+		  Obs: Classe aninhada, por padrão é private.
+		
+		
+		

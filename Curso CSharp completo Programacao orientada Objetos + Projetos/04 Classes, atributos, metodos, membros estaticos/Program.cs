@@ -2,7 +2,7 @@
 using System.Globalization;
 using TrianguloClass;
 using PeodutoClass;
-using RaioClass;
+using Calculadora;
 
 namespace Main
 {
