@@ -429,3 +429,31 @@ Ex:
 		
 		
 		
+# Tipos referÊncia e Valor
+
+	- Tipo Referência: Classes
+		- Grava uma referência na área de Stack, com um ponteiro para os campos da classe na área de Heap.
+		- Usufrui de todos os recursos OO
+		- Valor null, indica que aponte para ninguem, ou lugar nenhum na memória.
+		- Uma atribuição x = y grava na variável o mesmo ponteiro para a área de Heap.
+	
+	- Tipo Valor: Struct
+	    - São os tipos básicos, double, string, datetime
+		- Mais simples e performático, não tem suporte OO, mas suporta interface
+		- Grava o valor de fato na área de Stack
+		- Uma atribuição x = y, cria uma cópia do valor de uma em outra
+		- É possivel criar seu próprio struct, necessida inicializar ao menos o valores, entretando aceita o comando new;
+			namespace Course 
+			{
+				struct Point 
+				{
+				
+					public double X, Y;
+					
+					public overrride string ToString() 
+					{
+						return "(" + X + "," + Y + ")";
+					}
+				}	
+			}		
+	
