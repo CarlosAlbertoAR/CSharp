@@ -4,6 +4,7 @@
 2 - Instalar o .NET SDK 5
 3 - Instalar o Entity Framework
 	> dotnet tool install dotnet-ef -g
+
 4 - Extensões (Filtro = @installed)
 	> C# ms-dotnettools.csharp
 	> C# Extensions jchannon.csharpextensions | Extensões de facilitadores no botão direito
@@ -27,6 +28,11 @@
 	> Selecionar e Ctrl + D - Cria cursor adicional que será sincronizado aos comando de teclado 
 	
 	> cw + tab escreve Console.WriteLine
+        
+	> F5 inicia debug
+	> Shift F5 para debug
+	> F10 proxima linha debug
+ 	> F11 entra na função/procedure
 
 Selecionar + F12  > Entra no arquivo da classe correspondente
 
