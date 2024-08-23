@@ -1,1 +1,0 @@
-Csharp › Debug: Console = ExternalTerminal
