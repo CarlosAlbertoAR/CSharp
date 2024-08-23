@@ -1,5 +1,5 @@
 
-namespace RaioClass
+namespace Calculadora
 {
     class RaioUtils
     {
